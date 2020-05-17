@@ -30,7 +30,7 @@ $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
 ```
 For this code to work, you will need to tailor it to your specific purposes by changing two of the parameters. 
 
-Depending on how many pages are in your PDF file, you will need to the edit the "%03d" section of the "-sOutputFile=page%page03d.png" parameter.  If your file has <100 pages, change this to "%02d" (two digits), if your file has >100 pages but less than <1000, it can be left at "%03d" (three digits), if your file has >1000 pages but less than <10000, it should be changed to "%04d" (four digits), and so on. 
+Depending on how many pages are in your PDF file, you will need to the edit the "%03d" section of the "-sOutputFile=page%page03d.png" parameter.  If your file has <10 pages, change this to "%01d" (1 digit), if your file has <100 pages, change this to "%02d" (two digits), if your file has >100 pages but less than <1000, it can be left at "%03d" (three digits), if your file has >1000 pages but less than <10000, it should be changed to "%04d" (four digits), and so on. 
 
 The "input.pdf" parameter should be replaced with the exact name of the file you wish to convert. 
 
