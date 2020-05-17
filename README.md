@@ -36,7 +36,11 @@ The "input.pdf" parameter should be replaced with the exact name of the file you
 
 The rest of the parameters can be left the same.
 
-4. Run each of the individual .png files through Tesseract's OCR engine using the following Python script. Python is installed on MacOS computers by default. Just simply type the following script into your Terminal:
+For a PDF file with 40 pages named ATIP.pdf, the script should look like this:
+```
+$ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%02d.png ATIP.pdf
+```
+4. Run each of the individual .png files through Tesseract's OCR engine using the following Python script. Python is installed on MacOS computers by default, so there is no need to install anything. Simply type the following into your Terminal's command line:
 
 ```
 import os
