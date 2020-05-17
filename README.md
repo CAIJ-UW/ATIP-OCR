@@ -12,9 +12,16 @@ We provide two sample Access to Information (ATI) Act disclosures.
 
 We recommend first parsing each PDF disclosure package into smaller batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single page files. To achieve this, we used Ghoscript.
 
-1. Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it.
+Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it.
 
-2. Install Ghostscript on your computer by entering the following script into your command line terminal:
+Install Ghostscript on your computer by entering the following script into your command line terminal:
 
 ```
 $ brew install ghostscript
+
+```
+Using Ghostscript, convert your PDF disclosure file to individual page PNG files by typing the following into your Terminal:
+```
+$ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
+```
+
