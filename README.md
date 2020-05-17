@@ -18,7 +18,7 @@ Install Ghostscript on your computer by entering the following script into your 
 ```
 $ brew install ghostscript
 ```
-Using Ghostscript, convert your PDF disclosure file to individual page PNG files by typing a variation of the following into your Terminal, where \textcolor{red}{red} "-sDEVICE=png16m" specifies the file conversion format, "-r256" specifies the dimensions of your PNG files, "-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and "input.pdf" specifies the name of the PDF file you want to convert.
+Using Ghostscript, convert your PDF disclosure file to individual page PNG files by typing a variation of the following into your Terminal, where "-sDEVICE=png16m" specifies the file conversion format, "-r256" specifies the dimensions of your PNG files, "-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and "input.pdf" specifies the name of the PDF file you want to convert.
 ```
 $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
 ```
