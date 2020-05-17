@@ -15,13 +15,12 @@ We recommend first parsing each PDF disclosure package into smaller batches befo
 Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it.
 
 Install Ghostscript on your computer by entering the following script into your command line terminal:
-
 ```
 $ brew install ghostscript
-
 ```
-Using Ghostscript, convert your PDF disclosure file to individual page PNG files by typing the following into your Terminal:
+Using Ghostscript, convert your PDF disclosure file to individual page PNG files by typing a variation of the following into your Terminal, where "-sDEVICE=png16m" specifies the file conversion format, "-r256" specifies the dimensions of your PNG files, "-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and "input.pdf" specifies the name of the PDF file you want to convert.
 ```
 $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
 ```
+
 
