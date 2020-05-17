@@ -30,11 +30,16 @@ $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
 ```
 For this code to work, you will need to tailor it to your specific purposes by changing two of the parameters. 
 
-A. Depending on how many pages are in your PDF file, you will need to the edit the "%03d" section of the "-sOutputFile=page%page03d.png" parameter.  If your file has <100 pages, change this to "%02d" (two digits), if your file has >100 pages but less than <1000, it can be left at "%03d" (three digits), if your file has >1000 pages but less than <10000, it should be changed to "%04d" (four digits), and so on. 
+Depending on how many pages are in your PDF file, you will need to the edit the "%03d" section of the "-sOutputFile=page%page03d.png" parameter.  If your file has <100 pages, change this to "%02d" (two digits), if your file has >100 pages but less than <1000, it can be left at "%03d" (three digits), if your file has >1000 pages but less than <10000, it should be changed to "%04d" (four digits), and so on. 
 
-B. The "input.pdf" parameter should be replaced with the exact name of the file you wish to convert. 
+The "input.pdf" parameter should be replaced with the exact name of the file you wish to convert. 
 
 The rest of the parameters can be left the same.
 
-4. 
+4. Run each of the individual .png files through Tesseract's OCR engine using the following Python script. Python is installed on MacOS computers by default. Just simply type the following script into your Terminal:
+
+```
+import os
+for page in [x.split('.')[0] for x in os.listdir('page-imgs/')]: os.system(f'tesseract page-imgs/{page}.png page-txt/{page}')
+```
 
