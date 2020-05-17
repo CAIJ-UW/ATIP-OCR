@@ -10,4 +10,7 @@ We provide two sample Access to Information (ATI) Act disclosures.
 
 # Code
 
-We recommend first breaking the PDF up into smaller image batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single image files. The first was thus converted 251 individual image-page items, the second into 57.
+We recommend first parsing each PDF disclosure package into smaller batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single page files. To achieve this, we used Ghoscript.
+
+```
+$ brew install ghostscript
