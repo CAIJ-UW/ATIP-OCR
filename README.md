@@ -45,5 +45,16 @@ $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%02d.png ATIP.pdf
 4. Run each of the individual .png files through Tesseract's OCR engine using the following Python script. Python is installed on MacOS computers by default, so there is no need to install anything. Simply type the following into your Terminal's command line:
 ```
 import os
-for page in [x.split('.')[0] for x in os.listdir('page-imgs/')]: os.system(f'tesseract page-imgs/{page}.png page-txt/{page}')
+
+in_dir = 'page-txt'
+out_f  = 'compiled.txt'
+
+open(out_f, 'w').write('')
+for i in range(1, len(os.listdir(in_dir)) + 1): 
+	if i < 10: i = f'00{i}'
+	elif i < 100: i = f'0{i}'
+	else: pass
+	cmd = f'cat {in_dir}/page{i}.txt >> {out_f}'
+	print(cmd)
+	os.system(cmd)
 ```
