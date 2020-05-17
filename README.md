@@ -8,9 +8,13 @@ We provide two sample Access to Information (ATI) Act disclosures.
 
 2. A201700785_2019-05-13_11-33-38: A declassified, 57-page, non-machine readable PDF copy of the Canadian federal government's August 14th briefing on Deferred Prosecution Agreements.
 
-# Code
+# Code (MacOS)
 
 We recommend first parsing each PDF disclosure package into smaller batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single page files. To achieve this, we used Ghoscript.
+
+1. Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it.
+
+2. Install Ghostscript on your computer by entering the following script into your command line terminal:
 
 ```
 $ brew install ghostscript
