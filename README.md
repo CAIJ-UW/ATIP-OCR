@@ -70,23 +70,27 @@ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page-imgs/page%03d.png A-2017-00
 ```
 As there are 251 pages in this file, this may take a few minutes. When it is finished, you should see 251 individual .png files in your Sample-ATI-Disclosure folder.
 
-You should now exit Ghostscript by resetting the Terminal. You can do this simply by closing it and reopening it.
+You should now exit Ghostscript interpreter by typing "quit" into the command line.
 
 ### Step six
-Now we are ready to run each of these individual .png files through Tesseract's OCR engine using the following Python script. 
+We are now going to install Tesseract. In the Termiinal command line, type:
+```
+brew install tesseract
+```
+Now we are ready to run each of these individual .png files through Tesseract's OCR engine. To do this, we use Python. 
 
-As we have reset our Terminal, we need to reset our working directory. You can do this by using the same change directory command we used above, setting our directory again to the Sample-ATI-Disclosure folder:
-```
-cd paste/copied/pathway/name/here
-```
-Now let's run our Python script. Since Python is installed on MacOS computers by default, there is no need to install anything. Simply type the following into your Terminal's command line:
+Since Python is installed on MacOS computers by default, there is no need to install anything. Simply type the following into your Terminal's command line and press Enter twice:
 
 ```Python
+Python
 import os
 for page in [x.split('.')[0] for x in os.listdir('page-imgs/')]: os.system(f'tesseract page-imgs/{page}.png page-txt/{page}')
 ```
+As there are 251 individual PNG files to process, this can take some time. 
 
+### Step seven
 
+Finally, since we probably don't want the output to be 251 individual machine-reacable txt files, we need to recompile these. We can do this by running the following Python script, again in the Terminal:
 
 ```Python
 import os
@@ -103,3 +107,4 @@ for i in range(1, len(os.listdir(in_dir)) + 1):
 	print(cmd)
 	os.system(cmd)
 ```
+
