@@ -1,26 +1,26 @@
 # ATIP-OCR
 It is perennial problem in Canada that municipal, provincial, and federal government agencies disclose records by default in a non-machine readable (image) format. Excel files, for instance, are often printed and scanned by access coordinators before they are released to the requester. In some cases, coordinators may be willing to release the data in a "raw" format, however, this is not always the case. Fortunately, there is a free and open-source solution to this problem using the Tesseract Optical Character Recognition (OCR) engine, widely considered one of the best OCR engines available.
 
-# Limitations
+## Limitations
 The Tesseract OCR engine is highly effective, but not perfect. ATI/FOI disclosures are scanned copies of records. Depending on the quality of the scan, not all characters may be properly recognized. Moreover, ATI/FOI disclosures generally contain redactions, usually in the form of white, grey, or black boxes covering undisclosed portions of the text. This can also produce some issues for the OCR engine. As a result, depending on the quality and format of the ATI/FOI records, it is likely that some degree of document "cleaning" will be required after processing them.
 
-# Sample ATI Disclosures
+## Sample ATI Disclosures
 We provide two sample Access to Information (ATI) Act disclosures. 
 
 1. A-2017-00078: A 251-page, non-machine readable PDF copy of internal correspondence in the Canadian federal government concerning its relationship with the controversial, private American software company known as Palantir.
 
 2. A201700785_2019-05-13_11-33-38: A declassified, 57-page, non-machine readable PDF copy of the Canadian federal government's August 14th briefing on Deferred Prosecution Agreements.
 
-# Code (MacOS)
+## Code (MacOS)
 
 We recommend first parsing each PDF file into smaller batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single page files. To achieve this, we used Ghoscript.
 
-## Step one
+### Step one
 Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it. Entering the following script into your Terminal's command line:
 ```
 $ brew install ghostscript
 ```
-## Step two
+### Step two
 Set your working directly. Your working directory should be the folder that contains the PDF file you wish to convert into machine-readable format. To identify which directory you are current in, type the following script into your Terminal's command line: 
 ```
 pwd
@@ -30,7 +30,7 @@ To change your directory, type:
 cd /Name/Of/The/Directory/Containing/Your/File
 ```
 
-## Step three
+### Step three
 Using Ghostscript, convert your PDF disclosure file (stored in your working directory) to individual page PNG files by typing a variation of the following into your Terminal:
 ```
 $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
@@ -54,7 +54,7 @@ For a PDF file with 40 pages named ATIP.pdf, the script should look like this:
 ```
 $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%02d.png ATIP.pdf
 ```
-## Step four
+### Step four
 Run each of the individual .png files through Tesseract's OCR engine using the following Python script. Python is installed on MacOS computers by default, so there is no need to install anything. Simply type the following into your Terminal's command line:
 ```Python
 import os
