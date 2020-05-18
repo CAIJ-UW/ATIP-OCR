@@ -37,7 +37,7 @@ $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
 ```
 Where,
 ```python
-"-sDEVICE=png16m" = specifies the file conversion format, 
+"-sDEVICE=png16m" specifies the file conversion format, 
 "-r256" specifies the pixel dimensions of your PNG files, 
 "-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and 
 "input.pdf" specifies the name of the PDF file you want to convert
