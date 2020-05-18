@@ -1,7 +1,7 @@
 # ATIP-OCR (IN PROGRESS...)
 It is perennial problem in Canada that municipal, provincial, and federal government agencies disclose records by default in a non-machine readable (image) format. Excel files, for instance, are often printed and scanned by access coordinators before they are released to the requester. In some cases, coordinators may be willing to release the data in a "raw" format, however, this is not always the case. Fortunately, there is a free and open-source solution to this problem using the Tesseract Optical Character Recognition (OCR) engine, widely considered one of the best OCR engines available.
 
-# Important caveat
+# Limitations
 The Tesseract OCR engine is highly effective, but not perfect. ATI/FOI disclosures are scanned copies of records. Depending on the quality of the scan, not all characters may be properly recognized. Moreover, ATI/FOI disclosures generally contain redactions, usually in the form of white, grey, or black boxes covering undisclosed portions of the text. This can also produce some issues for the OCR engine. As a result, depending on the quality and format of the ATI/FOI records, it is likely that some degree of document "cleaning" will be required after processing them.
 
 # Sample ATI Disclosures
@@ -15,11 +15,13 @@ We provide two sample Access to Information (ATI) Act disclosures.
 
 We recommend first parsing each PDF file into smaller batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single page files. To achieve this, we used Ghoscript.
 
-1. Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it. Entering the following script into your Terminal's command line:
+## Step one
+Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it. Entering the following script into your Terminal's command line:
 ```
 $ brew install ghostscript
 ```
-2. Set your working directly. Your working directory should be the folder that contains the PDF file you wish to convert into machine-readable format. To identify which directory you are current in, type the following script into your Terminal's command line: 
+## Step two
+Set your working directly. Your working directory should be the folder that contains the PDF file you wish to convert into machine-readable format. To identify which directory you are current in, type the following script into your Terminal's command line: 
 ```
 pwd
 ```
@@ -27,7 +29,9 @@ To change your directory, type:
 ```
 cd /Name/Of/The/Directory/Containing/Your/File
 ```
-3. Using Ghostscript, convert your PDF disclosure file (stored in your working directory) to individual page PNG files by typing a variation of the following into your Terminal, where 
+
+## Step three
+Using Ghostscript, convert your PDF disclosure file (stored in your working directory) to individual page PNG files by typing a variation of the following into your Terminal, where 
 ```python
 "-sDEVICE=png16m" = specifies the file conversion format, 
 "-r256" specifies the pixel dimensions of your PNG files, 
@@ -50,7 +54,8 @@ For a PDF file with 40 pages named ATIP.pdf, the script should look like this:
 ```
 $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%02d.png ATIP.pdf
 ```
-4. Run each of the individual .png files through Tesseract's OCR engine using the following Python script. Python is installed on MacOS computers by default, so there is no need to install anything. Simply type the following into your Terminal's command line:
+## Step four
+Run each of the individual .png files through Tesseract's OCR engine using the following Python script. Python is installed on MacOS computers by default, so there is no need to install anything. Simply type the following into your Terminal's command line:
 ```Python
 import os
 
