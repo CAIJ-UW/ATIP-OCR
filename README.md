@@ -1,7 +1,8 @@
 # ATIP-OCR (IN PROGRESS...)
 It is perennial problem in Canada that municipal, provincial, and federal government agencies disclose records by default in a non-machine readable (image) format. Excel files, for instance, are often printed and scanned by access coordinators before they are released to the requester. In some cases, coordinators may be willing to release the data in a "raw" format, however, this is not always the case. Fortunately, there is a free and open-source solution to this problem using the Tesseract Optical Character Recognition (OCR) engine, widely considered one of the best OCR engines available.
 
-Important caveat: The Tesseract OCR engine is highly effective, but not perfect. ATI/FOI disclosures are scanned copies of records. Depending on the quality of the scan, not all characters may be properly recognized. Moreover, ATI/FOI disclosures generally contain redactions, usually in the form of white, grey, or black boxes covering undisclosed portions of the text. This can also produce some issues for the OCR engine. As a result, depending on the quality and format of the ATI/FOI records, it is likely that some degree of document "cleaning" will be required after processing them.
+# Important caveat
+The Tesseract OCR engine is highly effective, but not perfect. ATI/FOI disclosures are scanned copies of records. Depending on the quality of the scan, not all characters may be properly recognized. Moreover, ATI/FOI disclosures generally contain redactions, usually in the form of white, grey, or black boxes covering undisclosed portions of the text. This can also produce some issues for the OCR engine. As a result, depending on the quality and format of the ATI/FOI records, it is likely that some degree of document "cleaning" will be required after processing them.
 
 # Sample ATI Disclosures
 We provide two sample Access to Information (ATI) Act disclosures. 
@@ -12,7 +13,7 @@ We provide two sample Access to Information (ATI) Act disclosures.
 
 # Code (MacOS)
 
-We recommend first parsing each PDF disclosure package into smaller batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single page files. To achieve this, we used Ghoscript.
+We recommend first parsing each PDF file into smaller batches before processing using Tesseract OCR. To process the two example files in this repo, we divided each into single page files. To achieve this, we used Ghoscript.
 
 1. Install Ghostscript in your computer's terminal using Homebrew. To open your computer's terminal, first press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it. Entering the following script into your Terminal's command line:
 ```
@@ -26,7 +27,14 @@ To change your directory, type:
 ```
 cd /Name/Of/The/Directory/Containing/Your/File
 ```
-3. Using Ghostscript, convert your PDF disclosure file (stored in your working directory) to individual page PNG files by typing a variation of the following into your Terminal, where "-sDEVICE=png16m" specifies the file conversion format, "-r256" specifies the pixel dimensions of your PNG files, "-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and "input.pdf" specifies the name of the PDF file you want to convert.
+3. Using Ghostscript, convert your PDF disclosure file (stored in your working directory) to individual page PNG files by typing a variation of the following into your Terminal, where 
+```python
+"-sDEVICE=png16m" = specifies the file conversion format, 
+"-r256" specifies the pixel dimensions of your PNG files, 
+"-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and 
+"input.pdf" specifies the name of the PDF file you want to convert
+```
+
 ```
 $ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
 ```
