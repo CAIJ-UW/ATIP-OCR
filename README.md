@@ -31,16 +31,16 @@ cd /Name/Of/The/Directory/Containing/Your/File
 ```
 
 ## Step three
-Using Ghostscript, convert your PDF disclosure file (stored in your working directory) to individual page PNG files by typing a variation of the following into your Terminal, where 
+Using Ghostscript, convert your PDF disclosure file (stored in your working directory) to individual page PNG files by typing a variation of the following into your Terminal:
+```
+$ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
+```
+Where,
 ```python
 "-sDEVICE=png16m" = specifies the file conversion format, 
 "-r256" specifies the pixel dimensions of your PNG files, 
 "-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and 
 "input.pdf" specifies the name of the PDF file you want to convert
-```
-
-```
-$ gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
 ```
 For this code to work, you will need to tailor it to your specific purposes by changing two of the parameters. 
 
