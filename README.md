@@ -23,7 +23,7 @@ mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar 
 ```
 
 ### Step four: install Ghostscript using Homebrew
-*If you already have Homebrew installed on your computer, skip this step.
+*If you already have Ghostscript installed on your computer, skip this step.
 
 Download Ghostscript using Homebrew by entering the following command into your computer's Terminal:
 ```
@@ -31,6 +31,7 @@ brew install ghostscript
 ```
 
 ### Step five: install Tesseract using Homebrew
+*If you already have Tesseractc installed on your computer, skip this step.
 ```
 brew install tesseract
 ```
