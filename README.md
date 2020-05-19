@@ -6,105 +6,73 @@ The Tesseract OCR engine is highly effective, but not perfect. ATI/FOI disclosur
 
 ## Code (MacOS)
 
-### Step one
-Create a new folder on your computer's Desktop called "Sample-ATI-Disclosure". 
+The goal of this tutorial is to walk you through how to render your scanned, image format ATI/FOI disclosures machine readable in a txt format. For learning purposes, we recommend following the steps using one of the sample ATI disclosures provided in the repository. 
 
-Inside of this folder, create two additional folders that we will also need at later steps. Call first the "page-imgs", and the second "page-txt".
+### Step one: download the repository
+Download the repository, unzip the folder, and save it locally on your computer's harddrive. 
 
-Download the sample disclosure PDF file from this GitHub repository and save it in the Sample-ATI-Disclosure folder you just created on your desktop. Note: for the example code to work, you need to keep the file name the same. It should be saved as "A-2017-00078.pdf".
+### Step two: open your computer's command prompt
+Open your computer's command prompt. On MacOS, this is called the Terminal. To open the Terminal, simply press Command + Space and enter the word "Terminal" in the search bar. Double click the Terminal application listed under Top Hit to open it.
 
-You should now have a folder called "Sample-ATI-Disclosure" saved on your Desktop. Insider of this folder you should see a file called A-2017-00078.pdf and two empty folders called "page-imgs" and "page-txt".
+### Step three: install Homebrew
+*If you already have Homebrew installed on your computer, skip this step.
 
-### Step three
-We recommend parsing each PDF file into smaller batches before processing using Tesseract OCR. To achieve this, we will be using Ghoscript, which we will download using Homebrew. As not everyone may have Homebrew installed on their computers, we will need to first download Homebrew, which we will then use to download Ghostscript.
-
-Downloading these two applications requires entering only two simple lines of code into your computer's Terminal.
-
-To open your computer's Terminal, press command + space, and search "Terminal". Double click the Terminal application listed under Top Hit to open it. In your Terminal's command line, first install Homebrew by entering the following:
+Download Homebrew by entering the following command into your computer's Terminal:
 ```
 mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 ```
-Next, use homebrew to install ghostscript by entering:
+
+### Step four: install Ghostscript using Homebrew
+*If you already have Homebrew installed on your computer, skip this step.
+
+Download Ghostscript using Homebrew by entering the following command into your computer's Terminal:
 ```
 brew install ghostscript
 ```
-You should now have successfully downloaded homebrew and ghostcript on your computer and are ready to begin parsing the PDF.
 
-### Step four
-Before we can proceed any further, we need to set our working directory. The same as above, we will do this in the Terminal.
-
-Your working directory should be the folder that contains the PDF file you wish to convert into machine-readable format. If you have followed the instructions above, this is the Sample-ATI-Disclosure folder that you created on your computer's Desktop and saved the sample disclosure file in. 
-
-To set your working directory, you will need to furst obtain the name of the directory. On a Mac, this is very easy. Simply open the Sample-ATI-Disclosure folder on your desktop, click the gear wheel at the top, and select the option "Copy "Sample-ATI-Disclosure" as Path Name" from the list. 
-
-Now, in the Terminal command line, change your working directory to this folder, by entering:
-```
-cd paste/copied/pathway/name/here
-```
-In place of "paste/copied/pathway/name/here", paste the pathway that you copied in the previous step. The end result should look something like:
-```
-cd /Users/yourname/Desktop/Sample-ATI-Disclosure
-```
-
-### Step five
-Using Ghostscript, we will now convert the sample PDF disclosure file to individual page PNG files by typing a variation of the following into your Terminal's command line:
-```
-gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page%03d.png input.pdf
-```
-Where,
-```python
-"-sDEVICE=png16m" specifies the file conversion format, 
-"-r256" specifies the pixel dimensions of your PNG files, 
-"-sOutputFile=page%03d.png" specifies how each individual page output will be named on your local harddrive, and 
-"input.pdf" specifies the name of the PDF file you want to convert
-```
-For this code to work, we will need to tailor it to our specific purposes by changing two of the parameters. 
-
-Depending on how many pages are in your PDF file, you will need to the edit the "%03d" section of the "-sOutputFile=page%page03d.png" parameter.  If your file has <10 pages, change this to "%01d" (1 digit), if your file has <100 pages, change this to "%02d" (two digits), if your file has >100 pages but less than <1000, it can be left at "%03d" (three digits), if your file has >1000 pages but less than <10000, it should be changed to "%04d" (four digits), and so on. 
-
-The "input.pdf" parameter should be replaced with the exact name of the file you wish to convert. 
-
-Therefore, to process the sample PDF disclosure file saved in our Sample-ATI-Disclosure folder, we will adapt it as follows:
-```
-gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=page-imgs/page%03d.png A-2017-00078.pdf
-```
-As there are 251 pages in this file, this may take a few minutes. When it is finished, you should see 251 individual .png files in your Sample-ATI-Disclosure folder.
-
-You should now exit Ghostscript interpreter by typing "quit" into the command line.
-
-### Step six
-We are now going to install Tesseract. In the Termiinal command line, type:
+### Step five: install Tesseract using Homebrew
 ```
 brew install tesseract
 ```
-Now we are ready to run each of these individual .png files through Tesseract's OCR engine. To do this, we use Python. 
 
-Since Python is installed on MacOS computers by default, there is no need to install anything. Simply type the following into your Terminal's command line and press Enter twice:
-
-```Python
-Python
-import os
-for page in [x.split('.')[0] for x in os.listdir('page-imgs/')]: os.system(f'tesseract page-imgs/{page}.png page-txt/{page}')
+### Step six: copy the pathname of the folder you downloaded, unzipped, and saved in step one
+We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repistory and contains the sample ATI disclosures and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top, and select the "copy '<folder name>' as Pathname" option from the list. This will copy the name of the pathname to your clipboard.
+	
+### Step seven: change your working directory in the Terminal
+Change your working directory using the pathname you just copied to your clipboard in step six. To do this, we will return to the Terminal, first writing "cd" followed by the pathname we just copied (pasted into the Terminal using command + V). The end result will look something like this:
 ```
-As there are 251 individual PNG files to process, this can take some time. 
-
-### Step seven
-
-Finally, since we probably don't want the output to be 251 individual machine-reacable txt files, we need to recompile these. We can do this by running the following Python script, again in the Terminal:
-
-```Python
-import os
-
-in_dir = 'page-txt'
-out_f  = 'compiled.txt'
-
-open(out_f, 'w').write('')
-for i in range(1, len(os.listdir(in_dir)) + 1): 
-	if i < 10: i = f'00{i}'
-	elif i < 100: i = f'0{i}'
-	else: pass
-	cmd = f'cat {in_dir}/page{i}.txt >> {out_f}'
-	print(cmd)
-	os.system(cmd)
+cd <path/name>
+```
+To be more exact, if your name was Jane, and you saved the folder on your desktop, it would look like this:
+```
+cd /Users/jane/Desktop/ATIP-OCR-master
+```
+To double check that you are in the correct directory, you can enter the following into your Terminal, which will tell you the name of your current directory and print off the name of the files contained in it:
+```
+ls
 ```
 
+### Step eight: create an output subfolder
+To process our ATIP disclosure file rendering it machine readable, we are going to be first parsing the file into individual page elements, running each of these page elements through the Tesseract OCR engine, and recompiling the .txt files generated from each individual page item into a single .txt file that we can then analyze. Throughout these processing stages, a lot individual .png and .txt files are going to be generated, and these need to be stored somewhere.
+
+Inside the ATIP-OCR-master folder, our working directory, create a new subfolder. You can call this folder whatever you like. If you are using one of the sample ATI disclosures in the Sample-ATI-Disclosures folder, you might name the folder after the sample record you are processing, for example "A-2017-00078". 
+
+To check that this has worked, return to your Terminal and enter the following command (which we learned earlier):
+```
+ls
+```
+You should now see the name of your new subfolder listed with the other files in your working directory.
+
+### Step nine: run the script
+We are now ready to process our ATIP disclosure file using Ghostcript (to parse the file into individual page elements) and Tesseract (OCR engine). This stage can take several minutes (or hours) depending on the size of the file.
+
+To do this, we are going to be running a simple Python script (in you working directory, this is the OCR-converter.py file). All we need do is obtain the correct pathname for our input file (the ATIP disclosure file) and the correct pathname for our ouput file (the subfolder we created in step eight) and we are ready to go.
+
+The basic formula is:
+```
+python OCR-converter.py -i <input/file/pathname> -o <output/folder/pathname>
+```
+So, let's say we are going to run the script on the A-2017-00078.pdf file in the Sample-ATI-Disclosures subfolder, and we are going to store the results in a subfolder we created in step eight called A-2017-00078. The result would look like this:
+```
+python OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
+```
