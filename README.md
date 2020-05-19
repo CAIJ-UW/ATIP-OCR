@@ -37,7 +37,7 @@ brew install tesseract
 ```
 
 ### Step six: copy the pathname of the folder you downloaded, unzipped, and saved in step one
-We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repistory and contains the sample ATI disclosures and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top, and select the "copy <folder name> as Pathname" option from the list. This will copy the name of the pathname to your clipboard.
+We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repistory and contains the sample ATI disclosures and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top, and select the "copy as Pathname" option from the list. This will copy the name of the pathname to your clipboard.
 	
 ### Step seven: change your working directory in the Terminal
 Change your working directory using the pathname you just copied to your clipboard in step six. To do this, we will return to the Terminal, first writing "cd" followed by the pathname we just copied (pasted into the Terminal using command + V). The end result will look something like this:
