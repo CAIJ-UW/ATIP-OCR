@@ -72,7 +72,7 @@ The basic formula is:
 ```
 python OCR-converter.py -i <input/file/pathname> -o <output/folder/pathname>
 ```
-So, let's say we are going to run the script on the A-2017-00078.pdf file in the Sample-ATI-Disclosures subfolder, and we are going to store the results in a subfolder we created in step eight called A-2017-00078. The result would look like this:
+So, let's say we are going to run the script on the A-2017-00078.pdf file in the Sample-ATI-Disclosures subfolder, and we are going to store the results in the subfolder we created in step eight called A-2017-00078. The result would look like this:
 ```
 python OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
 ```
