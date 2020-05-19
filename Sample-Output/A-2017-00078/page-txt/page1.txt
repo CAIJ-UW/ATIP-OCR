@@ -1,0 +1,78 @@
+s.1 9(1) . Document Released Under the Access to
+Information Act / Document divulgué en vertu
+- de la Loi sur l'accés a l'information
+
+Goldfinger, Marc (PS/SP)
+
+ 
+
+From ’ a5.
+Sent:
+
+To: ae
+
+Subject: SecDev: Palantir and US Government Fraud Oversight Program
+
+On Friday, June 18th 2010 US Vice President Joe Biden and Office of Management and Budget Director Peter
+
+Orszag held a press conference at the White House announcing the success of fighting fraud in the stimulus by
+
+the Recovery Accountability and Transparency Board (RATB). Vice President Biden credited the success to the
+
+software being deployed by the Federal Government. He also announced that the capability will be deployed at
+- other US government agencies with significant budgets, starting with Medicare and Medicaid.
+
+|
+Palantir is the software platform used to help the government fight fraud and root out shady contractors.
+
+An excerpt from USA Today:
+http://content.usatoday.com/communities/theoval/post/2010/ (06/obama-administration-to-create-do-not-pay-list-
+
+to-bar-shady-contractors
+
+"New software, widely in use in the private sector but just now being deployed by the federal government, will
+enable Uncle Sam to end ... [fraud], Vice President Biden and White House Budget Director Peter Orszag said
+today. It allows the government to cross-check multiple databases [i.e. data integration] for background
+
+on prospective contractors. Orszag showed one example where five "companies" were traced to the same
+address: a house with a swimming pool and a boat dock.
+
+The software already is in use to monitor contracts issued under the $787 billion economic stimulus act; now it
+will be deployed to other big-spending government agencies, starting with Medicare and Medicaid.
+
+:
+Biden predicted this will result in significant savings of taxpayer dollars. "We have weapons we didn't have or
+didn't use before," he said."
+
+OMB Director Peter Orszag adds from his blog:
+http://www.whitehouse.gov/omb/blog/10/06/18/Do-Not-Pay-Do-Read-This-Post ,
+
+"I am a huge fan of data and am really impressed by this tool. It gathers enormous quantities of information — in
+real time — and then analyzes the data and helps connect the dots to identify indicators of possible fraud or
+error.” ,
+
+The SecDev Group is an operational consultancy based in Ottawa, Canada, and is proud to be the Canadian
+integrator for Palantir Technologies. For more information about Palantir as a fraud detection platform and its
+applicability to other enterprise level challenges, contact /))))/2))/)5i//)s:i/at the SecDev Group, (613) 755-
+4007 or}: _
+
+ 
+
+ 
+
+ 
+
+|. @secdev.ca
+
+ 
+
+   
+
+| @secdev.ca)
+
+ 
+
+If you no longer wish to receive these emails, please contact
+
+000001
+

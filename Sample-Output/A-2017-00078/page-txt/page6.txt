@@ -1,0 +1,80 @@
+, Document Released Under the Access to
+
+Inbecuist Relédesaumaat dkuasennyertu
+dintorknitian Azer Booutiat aiviigne en vertu
+de la Loi sur l'accés & Finformation
+o Finding #8: “For counter-radical messages to be effective they need to be much more frequently and
+consistently produced, as is the case with radical material...in addition, counter-radical messages must
+involve local, trust-worthy, moderate authorities.”
+
+Counter Messaging:
+- Counter messaging can take a number of forms and have varying levels of success, depending on strategic
+__ approach and execution.
+- Counter messaging must also be built upon a foundation of effective best practices and collected information
+(see above and below):
+- Counterspéech (Susan Benesch and Derek Ruths: Considerations for Successful Counterspeech )
+
+o Counterspeech, defined as a response that takes issue with hateful, harmful or extremist content, has
+proven in some contexts to be useful in changing immediate online behavior of hateful users on Twitter.
+
+©. This is particularly true in one-on-one engagements in which the engager used an empathetic/kind tone,
+images and humour. Identifying the speech as hateful, but not the user. Many-to-many initiatives can
+also have a positive impact, hijacking hateful/dangerous hashtags, but not necessarily changing the
+attitudes of the hateful users.
+
+o Other approaches, such as one-to-many and many-to-one counterspeech do not seem to result in the
+same constructive impact.
+
+- Evaluating Methods to Diminish Expressions of Hatred and Extremism Online (Susan.Benesch)
+oO The use of an automated scraping technology to pull down hateful/dangerous speech and
+_ counterspeech from Twitter, via keywords and hashtags.
+
+© Goal was to understand what sort of counterspeech is effective against hateful/dangerous speech across
+different contexts. ,
+
+o The scraping tool used on Twitter can be applied on that platform to pull down Islamic State and
+terrorist group content in order to both understanding current messaging
+techniques/patterns/narratives and provide information of use to quickly developing
+counternarratives/counter messaging for Twitter
+
+o Similar technology can be leveraged against other platforms with an API and which allow the
+governments and their partners to do so.
+
+© Such automated processes should be improved to help enhance the collection and identification abilities
+around hate/dangerous speech and counterspeech.
+
+- (Sand the Jihadist Information Highway: Projecting influence and Religious Identity via Telegram (Nico Prucha,
+Perspectives on Terrorism)
+
+© Telegram the primary hub for dispatching new content since early 2016
+
+o 1S presents itself, in Arabic, as an Arab movement fighting for independence, composed of modern-day
+islamic warriors/defenders of Sunni communities. Foreign fighters convey their religious reasons for
+joining to individuals in their home countries. ‘
+
+o The West has employed half-hearted counter-narratives that usually neither touch upon the Arabic
+propaganda content, nor the messages conveyed by non-Arab foreign fighters, who explain their
+reasons for joining the cause in their own words.
+
+© Telegram is now the main hub for [S to share content from other platforms and as a staging ground to
+share content te/coordinate “media raids” on other platforms. Twitter and Facebook accounts are
+published on Telegram, content from which is brought into Telegram: incite and recruit. new members.
+(Note: Question becomes how to ensure potential members do not follow into the depths of IS
+Telegram accounts, what role for messaging in countering this progression?) _
+
+© Counter narratives need to engage religious discourses, as religion is one of the central elements in 1S’
+
+” efforts to recruit and radicalize. There is a need to deconstruct the theology of violence inherent in
+jihadi communications and practice. '
+- Studying IS!S-related Activities on Telegram (Derek Ruths)
+
+o Ruths studied the early stage adoption of the Telegram platform by the Islamic State by scraping,
+categorizing and analyzing content from English language |S-related accounts .
+
+o While not comprehensive, the study highlights a few things:
+
+4
+000004
+
+000006
+

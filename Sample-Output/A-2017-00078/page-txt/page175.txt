@@ -1,0 +1,112 @@
+s.19(1)
+
+Media Outlet
+Telephone
+Call Date
+Status
+Subject
+
+Questions
+
+Response
+
+Reporter
+Media Outlet
+Telephone
+E-mail Address
+Call Date
+Deadline
+Status
+
+Subject
+
+Questions
+
+Document Released Under the Access to
+Information Act / Document divulgué en vertu
+de la Loi sur l'accés a l'information
+
+Uactualité
+
+ 
+
+08/05/2017 8:00 PM
+Completed
+Coitit des inondations
+
+Le journaliste avait contacté Environnement Canada.
+
+Le journaliste a des questions au sujet de cette page web :
+
+ 
+
+Q1. « Cott par habitant », est-ce le codit par habitant affecté ou par tous
+les canadiens affectés ou non?
+
+Q2. Dans les tableaux a la toute fin, il y a une mention : Inondation pour
+laquelle un paiement final n'a pas encore été fait. Ainsi, le chiffre indique
+les paiements jusqu'ici et/ou les paiements estimatifs a venir. Certain de
+ces événemenits ont eu lieu en 1991, pourquoi les données ne sont-elles
+pas disponibles?
+
+Le journaliste a été avisé par téléphone que la page a laquelle il faisait
+référence datait de 2013. Il a été redirigé 4 la base de données
+canadienne sur les désastres pour des informations 4 jour. Le cot par
+habitant de la province a été confirmé.
+
+ 
+
+ITWorldCanada
+©)
+
+    
+ 
+
+ 
+
+09/05/2017 12:05 PM
+09/05/2017 5:00 PM
+Referred to MO
+
+Government and cybersecurity
+
+ 
+
+I'm the: of ITWorldCanada.com, now contributing writer to
+the site on cyber security.
+
+ 
+
+i Travis Reese, president of security provider
+FireEye about a number of topics including whether the Canadian
+government is doing enough to strengthen cyber security here. I'd like
+to get comment from the government
+
+Among the things he said
+
+'™Your government is further behind other governments around the
+world. It seems to me that you need to be doing a better job in terms of
+bringing in cyber security education and awareness to make sure we're
+involving the workforce. I think the government's got to make some
+additional investments and think about creating the right level of cyber
+visibility, victim notification programs, how to get the public-private
+interaction working well. You're just starting to get serious, where you’re
+going to see disclosure laws coming into place - the changes I think that
+have evolved in other countries years ago [are] starting to take place,
+based on some of the legislation, regulation and things the government
+is starting to do here.”
+
+He also said that the federal government has to do a better job in
+sharing threat information it has with the private sector
+
+"There’s much more formal public-private communications [in other
+countries],,, there’s an evolution I think [Canada] needs to go through
+where the government needs to get good visibility on to internet activity
+from threat actors, and then create a public/private sharing mechanism
+in a way that makes sure they’re getting the private community to
+disclose the problems that are occurring so people can’t put their head in
+the sand."
+
+4
+000175
+
