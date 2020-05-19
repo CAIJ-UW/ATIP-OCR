@@ -1,12 +1,18 @@
-# ATIP-OCR
-It is perennial problem in Canada that municipal, provincial, and federal government agencies disclose records by default in a non-machine readable (image) format. Excel files, for instance, are often printed and scanned by access coordinators before they are released to the requester. In some cases, coordinators may be willing to release the data in a "raw" format, however, this is not always the case. Fortunately, there is a free and open-source solution to this problem using the Tesseract Optical Character Recognition (OCR) engine, widely considered one of the best OCR engines available.
+# ATIP-OCR: Access to Information and Privacy Optical Character Recognition
+ - [Alexander Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), PhDc Univeristy of Toronto
+ - [Kevin Dick](https://www.linkedin.com/in/dickkevin/), PhDc Carleton University
+ - [Kevin Walby](https://www.uwinnipeg.ca/criminal-justice/faculty-staff/kevin-walby.html), Associate Professor University of Winnipeg
+
+It is perennial problem in Canada that municipal, provincial, and federal government agencies disclose records by default in a non-machine readable (image) format. Excel files, for instance, are often printed and scanned by access coordinators before they are released to the requester. In some cases, coordinators may be willing to release the data in a "raw" format, however, this is not always the case. Fortunately, within the field of computer science, the tast of extracting text from scanned imagery is deemed a "solved" problem and there currently exist a number of free and open-source solutions to this problem. One such state-of-the-art method is the *Tesseract Optical Character Recognition* (OCR) engine, widely considered one of the best OCR engines available.
+
+Developing both computer literacy and algorithmic thinking will enbale the use of open-source tools that promise to eliminate many of the barriers to the access of information. The ability to convert a document into a format wherein it might be searched for keywords, phrases, and possibly studied using natural language processing (NLP) methods promises to revolutionize analytical methods within the social sciences that are typically limited to leveraging human-based readers/transcribers.
 
 ## Limitations
-The Tesseract OCR engine is highly effective, but not perfect. ATI/FOI disclosures are scanned copies of records. Depending on the quality of the scan, not all characters may be properly recognized. Moreover, ATI/FOI disclosures generally contain redactions, usually in the form of white, grey, or black boxes covering undisclosed portions of the text. This can also produce some issues for the OCR engine. As a result, depending on the quality and format of the ATI/FOI records, it is likely that some degree of document "cleaning" will be required after processing them.
+While the Tesseract OCR engine is highly effective, it is not perfect. ATI/FOI disclosures are typically scanned copies of records and depending on the quality of the scan, not all characters may be properly recognized. Moreover, ATI/FOI disclosures generally contain redactions, usually in the form of white, grey, or black boxes covering undisclosed portions of the text. Finally, complex character layouts, such as with scanned tables with varying layouts highlight the challenges in correctly identifying characters and presenting them in relation to others in the document. As a result, depending on the quality, layout, and format of the ATI/FOI records, it is likely that some degree of document "cleaning" will be required after processing them. However, the "[human-in-the-loop](https://en.wikipedia.org/wiki/Human-in-the-loop)" paradigm is commonly used in the computer sciences, where a machine will perform the bulk of the rote information processing and a human refines the results to ensure high-quality data.
 
-## Code (MacOS)
+## Code Tutorial (Compatible with MacOS & Linux):
 
-The goal of this tutorial is to walk you through how to render your scanned, image format ATI/FOI disclosures machine readable in a txt format. For learning purposes, we recommend following the steps using one of the sample ATI disclosures provided in the repository. 
+The goal of this tutorial is to walk you through how to render your scanned, image-based format ATI/FOI disclosures into a machine-readable and searchable text-based format. ThFor learning purposes, we recommend following the steps using one of the sample ATI disclosures provided in the repository. 
 
 ### Step one: download the repository
 Download the repository, unzip the folder, and save it locally on your computer's harddrive. 
