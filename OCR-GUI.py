@@ -11,7 +11,7 @@ import os, sys
 sg.LOOK_AND_FEEL_TABLE['CAIJ-UW-Theme'] = {'BACKGROUND': '#eeeeee',
                                            'TEXT': '#000000',
                                            'INPUT': '#ffffff',
-                                           'TEXT_INPUT': '#ffffff',
+                                           'TEXT_INPUT': '#000000',
 					   'SCROLL': '#cccccc',
                                            'BUTTON': ('white', '#e41128'),
 					   'PROGRESS': ('#01826B', '#D0D0D0'),
