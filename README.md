@@ -62,7 +62,16 @@ ls
 #### Step seven: create an output subfolder
 To process our sample ATI/FOI disclosure file rendering it machine readable, we are going to be first parsing the file into individual page elements, running each of these page elements through the Tesseract OCR engine, and recompiling the .txt files generated from each individual page item into a single .txt file that we can then clean, search, and analyze. Throughout these processing stages, a lot individual .png and .txt files are going to be generated, and these need to be stored somewhere (ideally not on your desktop!).
 
-Inside the ATIP-OCR-master folder, our working directory, create a new subfolder. You can call this folder whatever you like. If you are using one of the sample ATI disclosures in the Sample-ATI-Disclosures folder, you might name the folder after the sample record you are processing, for example "A-2017-00078". 
+Inside the ATIP-OCR-master folder, our working directory, create a new subfolder. You can call this folder whatever you like. If you are using one of the sample ATI disclosures in the Sample-ATI-Disclosures folder, you might name the subfolder after the sample record you are processing, for example "A-2017-00078". 
+
+To create this subfolder, enter the following into your computer's Terminal:
+```
+mkdir <subfolder-name>
+```
+So, if you are going to call this subfolder "A-2017-00078", you would write:
+```
+mkdir A-2017-00078
+```
 
 To verify that this has worked, return to your Terminal and enter the following command (which we learned earlier):
 ```
