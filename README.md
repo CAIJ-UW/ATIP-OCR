@@ -1,12 +1,12 @@
 # Access to Information and Optical Character Recognition (OCR): Rendering Image Format Public Records Machine Readable Using Tesseract OCR
- - [Alex Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), Univeristy of Toronto
+ - [Alex Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), University of Toronto
  - [Kevin Dick](https://www.linkedin.com/in/dickkevin/), Carleton University
  - [Kevin Walby](https://www.uwinnipeg.ca/criminal-justice/faculty-staff/kevin-walby.html), University of Winnipeg
 
 ## Overview
 It is perennial problem in Canada that municipal, provincial, and federal government agencies disclose records under Access to Information (ATI)/Freedom of Information (FOI) law by default in a non-machine readable (image) format. Excel files, for instance, are often printed and scanned by access coordinators before they are released to the requester. In some cases, coordinators may be willing to release the data in a "raw" format, however, this is not always the case. Historical researchers face a similar limitation when accessing public records via archives. To create copies of public records held in archives, researchers will typically photograph or scan them. In both cases the result is the same: a large dossier of non-machine readable, image format records stored on one's personal computer. 
 
-The inability to machine read these texts limits the kinds of analytic techniques we can use. With respect to FOI/ATI requests in particular, it also creates issues of access. It is a well known technique of obfuscation for government agencies to "over produce" when processing a request by including mounds of irrelevant text as part of one's diclosure package. Manually sifting through thousands of pages of image format documents disclosed under ATI/FOI in search of one or two lines or key words becomes the equivalent of finding a needle in a haystack.
+The inability to machine read these texts limits the kinds of analytic techniques we can use. With respect to FOI/ATI requests in particular, it also creates issues of access. It is a well known technique of obfuscation for government agencies to "over produce" when processing a request by including mounds of irrelevant text as part of one's disclosure package. Manually sifting through thousands of pages of image format documents disclosed under ATI/FOI in search of one or two lines or key words becomes the equivalent of finding a needle in a haystack.
 
 Fortunately, there currently exist a number of free and open-source solutions to this problem. Within the field of computer science, the rendering of scanned imagery into machine readable text is widely considered to be a "solved" problem. One such state-of-the-art solution is the *Tesseract Optical Character Recognition* (OCR) engine, considered to be one of the best OCR engines currently available.
 
@@ -21,10 +21,10 @@ Tesseract OCR is completely free. Proprietary OCR software by contrast is not, a
 ## Let's get started
 
 ### Tutorial (compatible with MacOS & Linux):
-The goal of this tutorial is to walk you through how to render your scanned, image-based format documents into a machine-readable, text-based format. The following steps are designed to build up an intuition for the use of open-source software to faciliate access to information. In the following, we will cover the high-level steps required to convert a large scanned document into a machine-readable and searchable format. For learning purposes, we recommend following the steps using one of two sample ATI/FOI disclosures provided in the repository. 
+The goal of this tutorial is to walk you through how to render your scanned, image-based format documents into a machine-readable, text-based format. The following steps are designed to build up an intuition for the use of open-source software to facilitate access to information. In the following, we will cover the high-level steps required to convert a large scanned document into a machine-readable and searchable format. For learning purposes, we recommend following the steps using one of two sample ATI/FOI disclosures provided in the repository. 
 
 #### Step one: download the repository
-Download the repository, unzip the folder, and save it locally on your computer's harddrive. 
+Download the repository, unzip the folder, and save it locally on your computer's hard drive. 
 
 #### Step two: open your computer's command prompt
 Open your computer's command prompt. On MacOS, this is called the Terminal. To open the Terminal, simply press Command + Space and enter the word "Terminal" in the search bar. Double click the Terminal application listed under Top Hit to open it.
@@ -101,11 +101,11 @@ pip3 install -r requirements.txt
 ```
 
 #### Step nine: run the script
-We are now ready to process your file using Ghostcript (to parse the file into individual page elements) and Tesseract (OCR engine)! This stage can take several minutes (or hours) depending on the size of the file.
+We are now ready to process your file using ghostscript (to parse the file into individual page elements) and tesseract (OCR engine)! This stage can take several minutes (or hours) depending on the size of the file.
 
 To do this, we are going to be running a simple Python script (in you working directory, this is the OCR-converter.py file). Same as the previous steps, we will run this script in the Terminal. Python is available on all MacOS computers by default, so there is no need to download anything (if you do encounter problems, however, you can download/update Python following the steps [here](https://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/)). 
 
-To run our Python scrcipt, alll we need do is obtain the correct pathname for our input file (if you are following along with the example, one of the sample ATI/FOI disclosure files) and the correct pathname for our ouput file (the subfolder we created in step eight) and we are ready to go.
+To run our Python script, all we need do is obtain the correct pathname for our input file (if you are following along with the example, one of the sample ATI/FOI disclosure files) and the correct pathname for our output file (the subfolder we created in step eight) and we are ready to go.
 
 The basic formula is:
 ```
@@ -115,4 +115,4 @@ So, let's say we are going to run the script on the A-2017-00078.pdf file in the
 ```
 python3 OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
 ```
-Enter this into your Terminal (you may need to press Enter twice to get it running), sit back, and relax! The end result will be a single .txt file in the output subfolder you created. 
+Enter this into your Terminal, sit back, and relax! The end result will be a single .txt file in the output subfolder you created.
