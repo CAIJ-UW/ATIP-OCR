@@ -34,15 +34,7 @@ Download Homebrew by entering the following command into your computer's Termina
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-#### Step four: install Ghostscript using Homebrew
-*If you already have Ghostscript installed on your computer, skip this step.*
-
-Download Ghostscript using Homebrew by entering the following command into your computer's Terminal:
-```
-brew install ghostscript
-```
-
-#### Step five: install Tesseract using Homebrew
+#### Step four: install Tesseract using Homebrew
 *If you already have Tesseract installed on your computer, skip this step.*
 
 Download Tesseract by entering the following command into your computer's Terminal:
@@ -50,10 +42,10 @@ Download Tesseract by entering the following command into your computer's Termin
 brew install tesseract
 ```
 
-#### Step six: copy the pathname of the folder you downloaded, unzipped, and saved in step one
+#### Step five: copy the pathname of the folder you downloaded, unzipped, and saved in step one
 We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repository and contains the sample ATI/FOI disclosures and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top of the window, and select the "copy as Pathname" option from the list. This will copy the full pathname to your clipboard.
 	
-#### Step seven: change your working directory in the Terminal
+#### Step six: change your working directory in the Terminal
 We will now change our working directory using the pathname you just copied to your clipboard. To do this, we will return to the Terminal, first writing "cd" followed by the pathname we just copied (pasted into the Terminal using command + V). The end result will look something like this:
 ```
 cd <path/name>
@@ -67,7 +59,7 @@ To double check that you are in the correct directory, you can enter the followi
 ls
 ```
 
-#### Step eight: create an output subfolder
+#### Step seven: create an output subfolder
 To process our sample ATI/FOI disclosure file rendering it machine readable, we are going to be first parsing the file into individual page elements, running each of these page elements through the Tesseract OCR engine, and recompiling the .txt files generated from each individual page item into a single .txt file that we can then clean, search, and analyze. Throughout these processing stages, a lot individual .png and .txt files are going to be generated, and these need to be stored somewhere (ideally not on your desktop!).
 
 Inside the ATIP-OCR-master folder, our working directory, create a new subfolder. You can call this folder whatever you like. If you are using one of the sample ATI disclosures in the Sample-ATI-Disclosures folder, you might name the folder after the sample record you are processing, for example "A-2017-00078". 
@@ -77,6 +69,12 @@ To verify that this has worked, return to your Terminal and enter the following 
 ls
 ```
 You should now see the name of your new subfolder listed with the other files in your working directory.
+
+### step eight: load in the requirements.txt file
+Before we can run our python script, we need to install two key python libraries. To do this, enter the following into your computer's Terminal:
+```
+pip3 install -r requirements.txt
+```
 
 #### Step nine: run the script
 We are now ready to process your file using Ghostcript (to parse the file into individual page elements) and Tesseract (OCR engine)! This stage can take several minutes (or hours) depending on the size of the file.
