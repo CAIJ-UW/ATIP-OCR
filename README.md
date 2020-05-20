@@ -43,7 +43,7 @@ brew install ghostscript
 ```
 
 #### Step five: install Tesseract using Homebrew
-*If you already have Tesseractc installed on your computer, skip this step.*
+*If you already have Tesseract installed on your computer, skip this step.*
 
 Download Tesseract by entering the following command into your computer's Terminal:
 ```
