@@ -43,7 +43,21 @@ You can download Homebrew by entering the following command into your computer's
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-#### Step four: install Tesseract using Homebrew
+#### Step four: install Ghostscript using Homebrew
+*If you already have Ghostscript installed on your computer, skip this step.*
+
+If you unsure about whether you have Ghostscript installed, type the following line into your computer's Terminal:
+```
+ghostscript help
+```
+If it returns "command not found", you do not have Ghostscript installed on your computer.
+
+You can download Ghostscript by entering the following command into your computer's Terminal:
+```
+brew install ghostscript
+```
+
+#### Step five: install Tesseract using Homebrew
 *If you already have tesseract installed on your computer, skip this step.*
 
 If you unsure about whether you have Tesseract installed, type the following line into your computer's Terminal:
@@ -57,10 +71,10 @@ You can download Tesseract by entering the following command into your computer'
 brew install tesseract
 ```
 
-#### Step five: copy the pathname of the folder you downloaded, unzipped, and saved in step one
+#### Step six: copy the pathname of the folder you downloaded, unzipped, and saved in step one
 We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repository and contains the sample ATI/FOI disclosures and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top of the window, and select the "copy as Pathname" option from the list. This will copy the full pathname to your clipboard.
 	
-#### Step six: change your working directory in the Terminal
+#### Step seven: change your working directory in the Terminal
 We will now change our working directory using the pathname you just copied to your clipboard. To do this, we will return to the Terminal, first writing "cd" followed by the pathname we just copied (pasted into the Terminal using command + V). The end result will look something like this:
 ```
 cd <path/name>
@@ -74,7 +88,7 @@ To double check that you are in the correct directory, you can enter the followi
 ls
 ```
 
-#### Step seven: create an output subfolder
+#### Step eight: create an output subfolder
 To process our sample ATI/FOI disclosure file rendering it machine readable, we are going to be first parsing the file into individual page elements, running each of these page elements through the Tesseract OCR engine, and recompiling the .txt files generated from each individual page item into a single .txt file that we can then clean, search, and analyze. Throughout these processing stages, a lot individual .png and .txt files are going to be generated, and these need to be stored somewhere (ideally not on your desktop!).
 
 Inside the ATIP-OCR-master folder, our working directory, create a new subfolder. You can call this folder whatever you like. If you are using one of the sample ATI disclosures in the Sample-ATI-Disclosures folder, you might name the subfolder after the sample record you are processing, for example "A-2017-00078". 
@@ -94,18 +108,21 @@ ls
 ```
 You should now see the name of your new subfolder listed with the other files in your working directory.
 
-### step eight: load in the requirements.txt file
+### step nine: load in the requirements.txt file
 Before we can run our python script, we need to install two key python libraries. To do this, enter the following into your computer's Terminal:
 ```
 pip3 install -r requirements.txt
 ```
 
-#### Step nine: run the script
+#### Step ten: run the script
 We are now ready to process your file using ghostscript (to parse the file into individual page elements) and tesseract (OCR engine)! This stage can take several minutes (or hours) depending on the size of the file.
 
-To do this, we are going to be running a simple Python script (in you working directory, this is the OCR-converter.py file). Same as the previous steps, we will run this script in the Terminal. Python is available on all MacOS computers by default, so there is no need to download anything (if you do encounter problems, however, you can download/update Python following the steps [here](https://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/)). 
+To do this, we are going to be running a simple Python script (in you working directory, this is the OCR-converter.py file). Same as the previous steps, we will run this script in the Terminal. Python is available on all MacOS computers by default, but depending on the age of your computer, you may need to update it to version 3. To do this, use homebrew to install python3 by entering the follow into your Terminal:
+```
+bew install python3
+```
 
-To run our Python script, all we need do is obtain the correct pathname for our input file (if you are following along with the example, one of the sample ATI/FOI disclosure files) and the correct pathname for our output file (the subfolder we created in step eight) and we are ready to go.
+To run the Python script, all we need do is obtain the correct pathname for our input file (if you are following along with the example, one of the sample ATI/FOI disclosure files) and the correct pathname for our output file (the subfolder we created in step eight) and we are ready to go.
 
 The basic formula is:
 ```
@@ -115,4 +132,4 @@ So, let's say we are going to run the script on the A-2017-00078.pdf file in the
 ```
 python3 OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
 ```
-Enter this into your Terminal, sit back, and relax! The end result will be a single .txt file in the output subfolder you created.
+Enter this into your Terminal, sit back, and relax! (But don't mess with anything in the master folder until it's completely finished!). The end result will be a single .txt file in the output subfolder you created by the same name as the pdf file you processed (e.g., A-2017-00078.txt). 
