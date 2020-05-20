@@ -28,8 +28,6 @@ Download the repository, unzip the folder, and save it locally on your computer'
 
 ![](Screen_Shots/download_image.png)
 
-![](Screen_Shots/Desktop.png)
-
 #### Step two: open your computer's command prompt
 Open your computer's command prompt. On MacOS, this is called the Terminal. To open the Terminal, simply press Command + Space and enter the word "Terminal" in the search bar. Double click the Terminal application listed under Top Hit to open it.
 
@@ -83,7 +81,7 @@ We need to obtain the full directory pathname of the folder that you downloaded,
 #### Step seven: change your working directory in the Terminal
 We will now change our working directory using the pathname you just copied to your clipboard. To do this, we will return to the Terminal, first writing "cd" followed by the pathname we just copied (pasted into the Terminal using command + V). The end result will look something like this:
 ```
-cd <path/name>
+cd path/name
 ```
 To be more exact, if your name was Jane, and you saved the folder on your desktop, it should look something like this:
 ```
@@ -132,7 +130,7 @@ To run the Python script, all we need do is obtain the correct pathname for our 
 
 The basic formula is:
 ```
-python3 OCR-converter.py -i <input/file/pathname> -o <output/folder/pathname>
+python3 OCR-converter.py -i input/file/pathname -o output/folder/pathname
 ```
 So, let's say we are going to run the script on the A-2017-00078.pdf file in the Sample-ATI-Disclosures subfolder, and we are going to store the results in the subfolder we created in step eight called A-2017-00078. The result would look like this:
 ```
