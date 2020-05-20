@@ -1,5 +1,5 @@
 # ATIP-OCR: Access to Information and Privacy Optical Character Recognition
- - [Alexander Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), PhDc Univeristy of Toronto
+ - [Alex Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), PhDc Univeristy of Toronto
  - [Kevin Dick](https://www.linkedin.com/in/dickkevin/), PhDc Carleton University
  - [Kevin Walby](https://www.uwinnipeg.ca/criminal-justice/faculty-staff/kevin-walby.html), Associate Professor University of Winnipeg
 
