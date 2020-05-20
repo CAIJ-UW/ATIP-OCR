@@ -15,6 +15,9 @@ The goal of this project is to teach you how to use Tesseract OCR. It is part of
 ## Tesseract is powerful, but not perfect
 While the Tesseract OCR engine is highly effective, it is not perfect. ATI/FOI disclosures and the record copies we obtain from public archives are typically photographed or scanned copies of records and depending on their quality, not all characters may be properly recognized. Moreover, ATI/FOI disclosures generally contain redactions, usually in the form of white, grey, or black boxes covering undisclosed portions of the text. Finally, complex character layouts, such as with scanned tables with varying layouts highlight the challenges in correctly identifying characters and presenting them in relation to others in the document. As a result, depending on the quality, layout, and format of the ATI/FOI records, it is likely that some degree of document "cleaning" will be required after processing them. Cleaning can be effectively streamlined by following what computer scientists call the "[human-in-the-loop](https://en.wikipedia.org/wiki/Human-in-the-loop)" paradigm, though we cannot get into this here.
 
+## Why use tesseract over easier to use, proprietary tools?
+For starters, tesseract OCR is completely free. Proprietary OCR software by contrast is not, and can be quite expensive. There is also no restriction to how many documents you can process using tesseract OCR, whereas most proprietary OCR software will limit the amount of records you can process (usually until you pay more). Depending on the software you purchase, it may also be less effective than tesseract (which, as noted, is one of the best OCR engines currently available). Finally, by using tesseract, we generate transparent, reproducible code that can be shared with others or adapted for future purposes. 
+
 ## Let's get started
 
 ### Tutorial (compatible with MacOS & Linux):
