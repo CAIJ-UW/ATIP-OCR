@@ -32,15 +32,27 @@ Open your computer's command prompt. On MacOS, this is called the Terminal. To o
 #### Step three: install Homebrew
 *If you already have Homebrew installed on your computer, skip this step.*
 
-Download Homebrew by entering the following command into your computer's Terminal:
+If you unsure if you have homebrew installed, type the following line into your computer's Terminal:
+```
+brew help
+```
+If it returns "command not found", you do not have homebrew installed on your computer.
+
+You can download Homebrew by entering the following command into your computer's Terminal:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 #### Step four: install Tesseract using Homebrew
-*If you already have Tesseract installed on your computer, skip this step.*
+*If you already have tesseract installed on your computer, skip this step.*
 
-Download Tesseract by entering the following command into your computer's Terminal:
+If you unsure if you have Tesseract installed, type the following line into your computer's Terminal:
+```
+tesseract help
+```
+If it returns "command not found", you do not have tesseract installed on your computer.
+
+You can download Tesseract by entering the following command into your computer's Terminal:
 ```
 brew install tesseract
 ```
