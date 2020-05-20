@@ -99,7 +99,7 @@ Inside the ATIP-OCR-master folder, our working directory, create a new subfolder
 
 To create this subfolder, enter the following into your computer's Terminal:
 ```
-mkdir <subfolder-name>
+mkdir subfolder-name
 ```
 So, if you are going to call this subfolder "A-2017-00078", you would write:
 ```
