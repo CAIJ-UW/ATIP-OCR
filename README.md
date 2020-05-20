@@ -1,7 +1,7 @@
 # Access to Information and Optical Character Recognition (OCR): Rendering Image Format Public Records Machine Readable Using Tesseract OCR
- - [Alex Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), PhDc Univeristy of Toronto
- - [Kevin Dick](https://www.linkedin.com/in/dickkevin/), PhDc Carleton University
- - [Kevin Walby](https://www.uwinnipeg.ca/criminal-justice/faculty-staff/kevin-walby.html), Associate Professor University of Winnipeg
+ - [Alex Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), Univeristy of Toronto
+ - [Kevin Dick](https://www.linkedin.com/in/dickkevin/), Carleton University
+ - [Kevin Walby](https://www.uwinnipeg.ca/criminal-justice/faculty-staff/kevin-walby.html), University of Winnipeg
 
 ## Overview
 It is perennial problem in Canada that municipal, provincial, and federal government agencies disclose records under Access to Information (ATI)/Freedom of Information (FOI) law by default in a non-machine readable (image) format. Excel files, for instance, are often printed and scanned by access coordinators before they are released to the requester. In some cases, coordinators may be willing to release the data in a "raw" format, however, this is not always the case. Historical researchers face a similar limitation when accessing public records via archives. To create copies of public records held in archives, researchers will typically photograph or scan them. In both cases the result is the same: a large dossier of non-machine readable, image format records stored on one's personal computer. 
