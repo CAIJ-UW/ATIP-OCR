@@ -31,7 +31,7 @@ Open your computer's command prompt. On MacOS, this is called the Terminal. To o
 
 Download Homebrew by entering the following command into your computer's Terminal:
 ```
-mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 #### Step four: install Ghostscript using Homebrew
