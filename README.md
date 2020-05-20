@@ -18,7 +18,7 @@ While the Tesseract OCR engine is highly effective, it is not perfect. ATI/FOI d
 ## Let's get started
 
 ### Tutorial (compatible with MacOS & Linux):
-The goal of this tutorial is to walk you through how to render your scanned, image-based format documents into a machine-readable, text-based format. For learning purposes, we recommend following the steps using one of the sample ATI/FOI disclosures provided in the repository. 
+The goal of this tutorial is to walk you through how to render your scanned, image-based format documents into a machine-readable, text-based format. The following steps are designed to build up an intuition for the use of open-source software to faciliate access to information. In the following, we will cover the high-level steps required to convert a large scanned document into a machine-readable and searchable format. For learning purposes, we recommend following the steps using one of two sample ATI/FOI disclosures provided in the repository. 
 
 #### Step one: download the repository
 Download the repository, unzip the folder, and save it locally on your computer's harddrive. 
