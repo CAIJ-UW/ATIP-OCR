@@ -87,10 +87,10 @@ To run our Python scrcipt, alll we need do is obtain the correct pathname for ou
 
 The basic formula is:
 ```
-python OCR-converter.py -i <input/file/pathname> -o <output/folder/pathname>
+python3 OCR-converter.py -i <input/file/pathname> -o <output/folder/pathname>
 ```
 So, let's say we are going to run the script on the A-2017-00078.pdf file in the Sample-ATI-Disclosures subfolder, and we are going to store the results in the subfolder we created in step eight called A-2017-00078. The result would look like this:
 ```
-python OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
+python3 OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
 ```
 Enter this into your Terminal (you may need to press Enter twice to get it running), sit back, and relax! The end result will be a single .txt file in the output subfolder you created. 
