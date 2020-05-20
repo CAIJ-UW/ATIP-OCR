@@ -93,4 +93,4 @@ So, let's say we are going to run the script on the A-2017-00078.pdf file in the
 ```
 python OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
 ```
-Enter this into your Terminal (you may need to press Enter twice to get it running), sit back, and relax! The end result will be a .txt file called "compiled.txt" in the output subfolder you created. 
+Enter this into your Terminal (you may need to press Enter twice to get it running), sit back, and relax! The end result will be a single .txt file in the output subfolder you created. 
