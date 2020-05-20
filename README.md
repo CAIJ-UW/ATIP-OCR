@@ -28,6 +28,8 @@ Download the repository, unzip the folder, and save it locally on your computer'
 
 ![](Screen_Shots/download_image.png)
 
+![](Screen_Shots/Desktop.png)
+
 #### Step two: open your computer's command prompt
 Open your computer's command prompt. On MacOS, this is called the Terminal. To open the Terminal, simply press Command + Space and enter the word "Terminal" in the search bar. Double click the Terminal application listed under Top Hit to open it.
 
@@ -75,6 +77,8 @@ brew install tesseract
 
 #### Step six: copy the pathname of the folder you downloaded, unzipped, and saved in step one
 We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repository and contains the sample ATI/FOI disclosures and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top of the window, and select the "copy as Pathname" option from the list. This will copy the full pathname to your clipboard.
+
+![](Screen_Shots/Pathname.png)
 	
 #### Step seven: change your working directory in the Terminal
 We will now change our working directory using the pathname you just copied to your clipboard. To do this, we will return to the Terminal, first writing "cd" followed by the pathname we just copied (pasted into the Terminal using command + V). The end result will look something like this:
