@@ -82,7 +82,7 @@ You should now see the name of your new subfolder listed with the other files in
 ### step eight: load in the requirements.txt file
 Before we can run our python script, we need to install two key python libraries. To do this, enter the following into your computer's Terminal:
 ```
-piip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 #### Step nine: run the script
