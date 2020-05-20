@@ -26,7 +26,7 @@ The goal of this tutorial is to walk you through how to render your scanned, ima
 #### Step one: download the repository
 Download the repository, unzip the folder, and save it locally on your computer's hard drive. 
 
-[](Screen_Shots/download_image.png)
+![](Screen_Shots/download_image.png)
 
 #### Step two: open your computer's command prompt
 Open your computer's command prompt. On MacOS, this is called the Terminal. To open the Terminal, simply press Command + Space and enter the word "Terminal" in the search bar. Double click the Terminal application listed under Top Hit to open it.
