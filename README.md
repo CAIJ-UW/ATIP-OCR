@@ -73,7 +73,7 @@ You should now see the name of your new subfolder listed with the other files in
 ### Step nine: run the script
 We are now ready to process our ATIP disclosure file using Ghostcript (to parse the file into individual page elements) and Tesseract (OCR engine). This stage can take several minutes (or hours) depending on the size of the file.
 
-To do this, we are going to be running a simple Python script (in you working directory, this is the OCR-converter.py file). All we need do is obtain the correct pathname for our input file (the ATIP disclosure file) and the correct pathname for our ouput file (the subfolder we created in step eight) and we are ready to go.
+To do this, we are going to be running a simple Python script (in you working directory, this is the OCR-converter.py file). We will enter this script in the Terminal. All we need do is obtain the correct pathname for our input file (the ATIP disclosure file) and the correct pathname for our ouput file (the subfolder we created in step eight) and we are ready to go.
 
 The basic formula is:
 ```
