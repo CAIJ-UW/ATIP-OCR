@@ -31,8 +31,6 @@ Download the repository, unzip the folder, and save it locally on your computer'
 #### Step two: open your computer's command prompt
 Open your computer's command prompt. On MacOS, this is called the Terminal. To open the Terminal, simply press Command + Space and enter the word "Terminal" in the search bar. Double click the Terminal application listed under Top Hit to open it.
 
-![](Screen_Shots/Terminal.png)
-
 #### Step three: install Homebrew
 *If you already have Homebrew installed on your computer, skip this step.*
 
