@@ -85,7 +85,7 @@ cd path/name
 ```
 To be more exact, if your name was Jane, and you saved the folder on your desktop, it should look something like this:
 ```
-cd /Users/jane/Desktop/ATIP-OCR-master
+cd /Users/jane/Desktop/access-to-information-ocr-master
 ```
 To double check that you are in the correct directory, you can enter the following into your Terminal, which will tell you the name of your current directory and print off the name of the files contained in it:
 ```
@@ -95,7 +95,7 @@ ls
 #### Step eight: create an output folder
 To process our sample ATI/FOI disclosure file rendering it machine readable, we are going to be first parsing the file into individual page elements, running each of these page elements through the Tesseract OCR engine, and recompiling the .txt files generated from each individual page item into a single .txt file that we can then clean, search, and analyze. Throughout these processing stages, a lot individual .png and .txt files are going to be generated, and these need to be stored somewhere (ideally not on your desktop!).
 
-Inside the ATIP-OCR-master folder, our working directory, create a new folder. You can call this folder whatever you like. If you are using one of the sample data files in the Sample-Files folder, you might name the folder after the sample record you are processing by calling it "A-2017-00078". 
+Inside the access-to-information-ocr-master folder, our working directory, create a new folder. You can call this folder whatever you like. If you are using one of the sample data files in the Sample-Files folder, you might name the folder after the sample record you are processing by calling it "A-2017-00078". 
 
 To create this subfolder, enter the following into your computer's Terminal:
 ```
