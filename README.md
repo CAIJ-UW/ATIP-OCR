@@ -21,7 +21,7 @@ Tesseract OCR is completely free. Proprietary OCR software by contrast is not, a
 ## Let's get started
 
 ### Tutorial (compatible with MacOS & Linux):
-The goal of this tutorial is to walk you through how to render your scanned, image-based format documents into a machine-readable, text-based format. The following steps are designed to build up an intuition for the use of open-source software to facilitate access to information. In the following, we will cover the high-level steps required to convert a large scanned document into a machine-readable and searchable format. For learning purposes, we recommend following the steps using one of two sample pdf files provided in the "Sample-Files" folder in the repository. 
+The goal of this tutorial is to walk you through how to render your scanned, image-based format documents into a machine-readable, text-based format. The following steps are designed to build up an intuition for the use of open-source software to facilitate access to information. In the following, we will cover the high-level steps required to convert a large scanned document into a machine-readable and searchable format. For learning purposes, we recommend following the steps using the sample pdf file provided in the "Sample-Files" folder in the repository. 
 
 #### Step one: download the repository
 Download the repository, unzip the folder, and save it locally on your computer's hard drive. 
@@ -95,7 +95,7 @@ ls
 #### Step eight: create an output folder
 To process our sample ATI/FOI disclosure file rendering it machine readable, we are going to be first parsing the file into individual page elements, running each of these page elements through the Tesseract OCR engine, and recompiling the .txt files generated from each individual page item into a single .txt file that we can then clean, search, and analyze. Throughout these processing stages, a lot individual .png and .txt files are going to be generated, and these need to be stored somewhere (ideally not on your desktop!).
 
-Inside the ATIP-OCR-master folder, our working directory, create a new folder. You can call this folder whatever you like. If you are using one of the sample data files in the Sample-Files folder, you might name the subfolder after the sample record you are processing, for example "A-2017-00078". 
+Inside the ATIP-OCR-master folder, our working directory, create a new folder. You can call this folder whatever you like. If you are using one of the sample data files in the Sample-Files folder, you might name the folder after the sample record you are processing by calling it "A-2017-00078". 
 
 To create this subfolder, enter the following into your computer's Terminal:
 ```
@@ -136,7 +136,7 @@ So, let's say we are going to run the script on the A-2017-00078.pdf file in the
 ```
 python3 OCR-converter.py -i Sample-Files/A-2017-00078.pdf -o A-2017-00078
 ```
-Enter this into your Terminal, sit back, and relax! (But don't mess with anything in the master folder until the code is completely finished running!). The end result will be a single .txt file in the output subfolder you created by the same name as the pdf file you processed (e.g., A-2017-00078.txt). 
+Enter this into your Terminal, sit back, and relax (but don't mess with anything in the master folder until the code is completely finished running!). The end result will be a single .txt file in the output subfolder you created by the same name as the pdf file you processed (e.g., A-2017-00078.txt). 
 
 ### Next Steps
 You are now ready to run the Tesseract's OCR engine on your own image format text files, whether it be an ATI/FOI disclosure, a series of public records images from the archive, or any other kind of image format document. If it is a pdf format ATI/FOI disclosure that you wish to process, this should be a simple matter of following and adapting the steps above. If it is a folder of images you wish to process, you are going to need to first compile them into a single pdf file (assuming you don't wish to alter the python converter script, of course). To compile your image files into a single pdf, there are lots of free tools you can use online (and, yes, you could also do this in python!).
