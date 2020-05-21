@@ -74,7 +74,7 @@ brew install tesseract
 ```
 
 #### Step six: copy the pathname of the folder you downloaded, unzipped, and saved in step one
-We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repository and contains the sample ATI/FOI disclosures and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top of the window, and select the "copy as Pathname" option from the list. This will copy the full pathname to your clipboard.
+We need to obtain the full directory pathname of the folder that you downloaded, unzipped, and saved in step one. This is a copy of the repository and contains the sample file and scripts we will need to run the Tesseract OCR engine. To obtain the exact pathname to this folder, simply open the folder on your computer, click the gear wheel at the top of the window, and select the "copy as Pathname" option from the list. This will copy the full pathname to your clipboard.
 
 ![](Screen_Shots/Pathname.png)
 	
@@ -97,11 +97,11 @@ To process our sample ATI/FOI disclosure file rendering it machine readable, we 
 
 Inside the access-to-information-ocr-master folder, our working directory, create a new folder. You can call this folder whatever you like. If you are using one of the sample data files in the Sample-Files folder, you might name the folder after the sample record you are processing by calling it "A-2017-00078". 
 
-To create this subfolder, enter the following into your computer's Terminal:
+The basic formula is:
 ```
 mkdir subfolder-name
 ```
-So, if you are going to call this folder "A-2017-00078", you would write:
+So, if you are going to call this folder "A-2017-00078", you would enter the following into your computer's Terminal:
 ```
 mkdir A-2017-00078
 ```
