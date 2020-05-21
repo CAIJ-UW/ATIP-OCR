@@ -92,16 +92,16 @@ To double check that you are in the correct directory, you can enter the followi
 ls
 ```
 
-#### Step eight: create an output subfolder
+#### Step eight: create an output folder
 To process our sample ATI/FOI disclosure file rendering it machine readable, we are going to be first parsing the file into individual page elements, running each of these page elements through the Tesseract OCR engine, and recompiling the .txt files generated from each individual page item into a single .txt file that we can then clean, search, and analyze. Throughout these processing stages, a lot individual .png and .txt files are going to be generated, and these need to be stored somewhere (ideally not on your desktop!).
 
-Inside the ATIP-OCR-master folder, our working directory, create a new subfolder. You can call this folder whatever you like. If you are using one of the sample ATI disclosures in the Sample-ATI-Disclosures folder, you might name the subfolder after the sample record you are processing, for example "A-2017-00078". 
+Inside the ATIP-OCR-master folder, our working directory, create a new folder. You can call this folder whatever you like. If you are using one of the sample data files in the Sample-Files folder, you might name the subfolder after the sample record you are processing, for example "A-2017-00078". 
 
 To create this subfolder, enter the following into your computer's Terminal:
 ```
 mkdir subfolder-name
 ```
-So, if you are going to call this subfolder "A-2017-00078", you would write:
+So, if you are going to call this folder "A-2017-00078", you would write:
 ```
 mkdir A-2017-00078
 ```
@@ -132,8 +132,8 @@ The basic formula is:
 ```
 python3 OCR-converter.py -i input/file/pathname -o output/folder/pathname
 ```
-So, let's say we are going to run the script on the A-2017-00078.pdf file in the Sample-ATI-Disclosures subfolder, and we are going to store the results in the subfolder we created in step eight called A-2017-00078. The result would look like this:
+So, let's say we are going to run the script on the A-2017-00078.pdf file in the Sample-Files subfolder, and we are going to store the results in the subfolder we created in step eight called A-2017-00078. The result would look like this:
 ```
-python3 OCR-converter.py -i Sample-ATI-Disclosures/A-2017-00078.pdf -o A-2017-00078
+python3 OCR-converter.py -i Sample-Files/A-2017-00078.pdf -o A-2017-00078
 ```
 Enter this into your Terminal, sit back, and relax! (But don't mess with anything in the master folder until it's completely finished!). The end result will be a single .txt file in the output subfolder you created by the same name as the pdf file you processed (e.g., A-2017-00078.txt). 
