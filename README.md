@@ -1,6 +1,7 @@
 # Access to Information and Optical Character Recognition (OCR): Rendering Image Format Public Records Machine Readable Using Tesseract OCR
  - [Alex Luscombe](https://criminology.utoronto.ca/facultyandstaff/graduate-students/alex-luscombe/), University of Toronto
  - [Kevin Dick](https://www.linkedin.com/in/dickkevin/), Carleton University
+ - [Jamie Duncan](https://ca.linkedin.com/in/jamie-duncan), University of Toronto
  - [Kevin Walby](https://www.uwinnipeg.ca/criminal-justice/faculty-staff/kevin-walby.html), University of Winnipeg
 
 ## Overview
