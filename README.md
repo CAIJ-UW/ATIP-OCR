@@ -19,7 +19,7 @@ While the Tesseract OCR engine is highly effective, it is not perfect. ATI/FOI d
 Depending on the quality, layout, and format of the ATI/FOI records, it is therefore likely that some degree of document "cleaning" will be required after processing them. Cleaning can be effectively streamlined by following what computer scientists call the "[human-in-the-loop](https://en.wikipedia.org/wiki/Human-in-the-loop)" paradigm, which we will try to cover in a future tutorial in this series.
 
 ## Open-source vs proprietary OCR
-Tesseract OCR is completely free. Proprietary OCR software by contrast can be quite expensive. There is also no restriction to how many documents you can process using tesseract OCR, whereas most proprietary software will limit the number of pages you can process (usually until you pay more). Depending on the software you purchase, it may also be less effective than Tesseract (tesseract, as noted above, is one of the best OCR engines available). Finally, by using Tesseract, we generate transparent, reproducible code that can be shared with others or adapted for future purposes. 
+Tesseract OCR is completely free. Proprietary OCR software by contrast can be quite expensive. There is also no restriction to how many documents you can process using tesseract OCR, whereas most proprietary software will limit the number of pages you can process (usually until you pay more). Depending on the software you purchase, it may also be less effective than Tesseract (Tesseract, as noted above, is one of the best OCR engines available). Finally, by using Tesseract, we generate transparent, reproducible code that can be shared with others or adapted for future purposes. 
 
 ## Let's get started
 
