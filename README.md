@@ -145,3 +145,7 @@ So, let's say we are going to run the script on the A-2017-00078.pdf file in the
 python3 OCR-converter.py -i Sample-Files/A-2017-00078.pdf -o A-2017-00078
 ```
 Enter this into your Terminal, sit back, and relax (but don't mess with anything in the master folder until the code is completely finished running!). The end result will be a single .txt file in the output subfolder you created by the same name as the pdf file you processed (e.g., A-2017-00078.txt). 
+
+### Next steps
+
+Now try it with your own files!
