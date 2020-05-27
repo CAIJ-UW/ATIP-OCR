@@ -23,7 +23,7 @@ layout = [[sg.Text('Enter Scanned PDF File to Convert & Folder to Save Results')
           [sg.Text('PDF to Convert'), sg.Input(), sg.FileBrowse()],
 	  [sg.Text('Results Folder'), sg.Input(key='-USER FOLDER-'), sg.FolderBrowse(target='-USER FOLDER-')],
           [sg.Submit(), sg.Exit()],
-	  [sg.Text('Alexander Luscombe, Kevin Dick, Kevin Walby')],
+	  [sg.Text('Alexander Luscombe, Kevin Dick, Jamie Duncan, Kevin Walby')],
 	  [sg.Text('Centre for Access to Information and Justice, University of Winnipeg')]
 	 ]
 
