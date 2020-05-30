@@ -24,6 +24,7 @@ Tesseract OCR is completely free. Proprietary OCR software by contrast can be qu
 ## Let's get started
 
 ### Companion Video
+Follow along with our companion how-to video:
 
 [![image](Screen_Shots/YouTube_Video.png)](https://www.youtube.com/watch?v=qs2jO61_Vk8&feature=youtu.be)
 
