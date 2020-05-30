@@ -25,7 +25,7 @@ Tesseract OCR is completely free. Proprietary OCR software by contrast can be qu
 
 ### Companion Video
 
-[![image](Screen_Shots/YouTube_Video)](https://www.youtube.com/watch?v=qs2jO61_Vk8&feature=youtu.be)
+[![image](Screen_Shots/YouTube_Video.png)](https://www.youtube.com/watch?v=qs2jO61_Vk8&feature=youtu.be)
 
 ### Tutorial (compatible with MacOS & Linux):
 This tutorial will walk you through how to render your scanned, image-based documents (including PDFs) into a machine-readable, text-based format. The tutorial is designed to build skills for the use of open-source software to improve access to information generally. We cover the high-level steps required to convert a large scanned PDF format document into a machine-readable and searchable .txt format. We recommend beginning by following the steps using the sample pdf file provided in the "Sample-Files" folder in the repository. 
